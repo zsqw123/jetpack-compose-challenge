@@ -32,7 +32,7 @@ object CatConst {
         Cat(a0, a1, a2, listOf(R.mipmap.a1, R.mipmap.a2, R.mipmap.a3)),
         Cat(b0, b1, b2, listOf(R.mipmap.b1, R.mipmap.b2, R.mipmap.b3, R.mipmap.b4)),
         Cat(c0, c1, c2, listOf(R.mipmap.c1, R.mipmap.c2)),
-    ).enlargeList(2).shuffled()
+    ).enlargeList(6).shuffled()
 
     private fun MutableList<Cat>.enlargeList(times: Int = 1): MutableList<Cat> {
         val tmp = toList()

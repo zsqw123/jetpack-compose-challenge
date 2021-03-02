@@ -1,4 +1,4 @@
-# Put title of your app here
+# CatAdopt
 
 <!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
 <!--- You can find both of these in the url bar when you open your repository in github. -->
@@ -7,13 +7,17 @@
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
 
+This is a simple cat adoption app built by `Jetpack Compose`!
+
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
 <!--- What are you especially proud of? -->
 
+Compose is a very easy-to-use UI framework. In this application, Compose's state feature helps us quickly build a data-driven interface. For example, when you click on the pet details interface, we can see that the button changes, and Using the native Toast, a toast pops up, and these interactions are very simple to implement with Jetpack Compose!
+
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_2.png" width="260">
+<img src="https://cdn.jsdelivr.net/gh/zsqw123/cdn@master/picCDN/20210302160807.jpg" width="260">&emsp;<img src="https://cdn.jsdelivr.net/gh/zsqw123/cdn@master/picCDN/20210302160823.jpg" width="260">
 
 ## License
 ```
