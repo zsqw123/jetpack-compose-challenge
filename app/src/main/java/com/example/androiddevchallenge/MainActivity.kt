@@ -21,12 +21,12 @@ import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -52,9 +52,11 @@ class MainActivity : AppCompatActivity() {
         setContent {
             MyTheme {
                 MyApp(CatConst.catList) {
-                    startActivity(Intent(this, DetailActivity::class.java).apply {
-                        putExtra("id", it)
-                    })
+                    startActivity(
+                        Intent(this, DetailActivity::class.java).apply {
+                            putExtra("id", it)
+                        }
+                    )
                 }
             }
         }
@@ -89,7 +91,6 @@ fun MyApp(cats: List<Cat>, startDetail: (Int) -> Unit = {}) {
                         Text(text = it.title, maxLines = 1, fontWeight = FontWeight.Bold)
                         Text(text = it.desc, maxLines = 2, modifier = Modifier.padding(0.dp, 4.dp), overflow = TextOverflow.Ellipsis)
                     }
-
                 }
             }
         }
